@@ -1,0 +1,47 @@
+{
+  "name": "@storybook/addon-events",
+  "version": "5.2.0-alpha.44",
+  "description": "Add events to your Storybook stories.",
+  "keywords": [
+    "addon",
+    "events",
+    "react",
+    "storybook"
+  ],
+  "homepage": "https://github.com/storybookjs/storybook/tree/master/addons/events",
+  "bugs": {
+    "url": "https://github.com/storybookjs/storybook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybookjs/storybook.git",
+    "directory": "addons/events"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "node ../../scripts/prepare.js"
+  },
+  "dependencies": {
+    "@storybook/addons": "5.2.0-alpha.44",
+    "@storybook/api": "5.2.0-alpha.44",
+    "@storybook/client-api": "5.2.0-alpha.44",
+    "@storybook/core-events": "5.2.0-alpha.44",
+    "@storybook/theming": "5.2.0-alpha.44",
+    "core-js": "^3.0.1",
+    "format-json": "^1.0.3",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-lifecycles-compat": "^3.0.4",
+    "react-textarea-autosize": "^7.0.4",
+    "util-deprecate": "^1.0.2"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

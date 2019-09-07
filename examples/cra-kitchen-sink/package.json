@@ -1,0 +1,40 @@
+{
+  "name": "cra-kitchen-sink",
+  "version": "5.2.0-alpha.44",
+  "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "build-storybook": "build-storybook -s public",
+    "eject": "react-scripts eject",
+    "now-build": "node ../../scripts/bootstrap --core && yarn run build-storybook --quiet",
+    "start": "react-scripts start",
+    "storybook": "start-storybook -p 9010 -s public",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-lifecycles-compat": "^3.0.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "5.2.0-alpha.44",
+    "@storybook/addon-actions": "5.2.0-alpha.44",
+    "@storybook/addon-backgrounds": "5.2.0-alpha.44",
+    "@storybook/addon-centered": "5.2.0-alpha.44",
+    "@storybook/addon-events": "5.2.0-alpha.44",
+    "@storybook/addon-info": "5.2.0-alpha.44",
+    "@storybook/addon-jest": "5.2.0-alpha.44",
+    "@storybook/addon-knobs": "5.2.0-alpha.44",
+    "@storybook/addon-links": "5.2.0-alpha.44",
+    "@storybook/addon-notes": "5.2.0-alpha.44",
+    "@storybook/addon-options": "5.2.0-alpha.44",
+    "@storybook/addon-storyshots": "5.2.0-alpha.44",
+    "@storybook/addons": "5.2.0-alpha.44",
+    "@storybook/client-logger": "5.2.0-alpha.44",
+    "@storybook/react": "5.2.0-alpha.44",
+    "@storybook/theming": "5.2.0-alpha.44",
+    "react-scripts": "^3.0.1"
+  }
+}

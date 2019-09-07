@@ -1,0 +1,54 @@
+{
+  "name": "@storybook/riot",
+  "version": "5.2.0-alpha.44",
+  "description": "Storybook for riot.js: View riot snippets in isolation with Hot Reloading.",
+  "keywords": [
+    "storybook"
+  ],
+  "homepage": "https://github.com/storybookjs/storybook/tree/master/app/riot",
+  "bugs": {
+    "url": "https://github.com/storybookjs/storybook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybookjs/storybook.git",
+    "directory": "app/riot"
+  },
+  "license": "MIT",
+  "main": "dist/client/index.js",
+  "bin": {
+    "build-storybook": "./bin/build.js",
+    "start-storybook": "./bin/index.js",
+    "storybook-server": "./bin/index.js"
+  },
+  "scripts": {
+    "prepare": "node ../../scripts/prepare.js"
+  },
+  "dependencies": {
+    "@storybook/core": "5.2.0-alpha.44",
+    "common-tags": "^1.8.0",
+    "core-js": "^3.0.1",
+    "global": "^4.3.2",
+    "raw-loader": "^2.0.0",
+    "regenerator-runtime": "^0.12.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "babel-loader": "^7.0.0 || ^8.0.0",
+    "riot": "^3.0.0 || ^4.0.0",
+    "riot-compiler": "^3.5.1 || ^4.0.0",
+    "riot-hot-reload": "^1.0.0",
+    "riot-tag-loader": "^2.0.0 || ^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
