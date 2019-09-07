@@ -42,6 +42,7 @@
   ],
   "scripts": {
     "bootstrap": "node ./scripts/bootstrap.js",
+    "build-prd": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "bootstrap:docs": "yarn install --cwd docs",
     "build-packs": "lerna exec --scope '@storybook/*' -- \\$LERNA_ROOT_PATH/scripts/build-pack.sh \\$LERNA_ROOT_PATH/packs",
     "build-storybooks": "./scripts/build-storybooks.sh",
@@ -71,7 +72,8 @@
     "start": "yarn --cwd examples/official-storybook storybook",
     "test": "node ./scripts/test.js",
     "test-latest-cra": "yarn --prefix --cwd lib/cli run test-latest-cra",
-    "test:cli": "npm --prefix lib/cli run test"
+    "test:cli": "npm --prefix lib/cli run test",
+    "build-storybook": "build-storybook -c config/storybook -o storybook"
   },
   "husky": {
     "hooks": {
