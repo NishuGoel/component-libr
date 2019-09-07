@@ -1,0 +1,17 @@
+import { Knob, KnobType } from './type-defs';
+import { NumberTypeKnobOptions, ButtonTypeOnClickProp, RadiosTypeOptionsProp, SelectTypeOptionsProp, SelectTypeKnobValue, OptionsTypeOptionsProp, OptionsKnobOptions } from './components/types';
+export declare function knob<T extends KnobType>(name: string, options: Knob<T>): Knob<T>["value"];
+export declare function text(name: string, value: string, groupId?: string): string;
+export declare function boolean(name: string, value: boolean, groupId?: string): boolean;
+export declare function number(name: string, value: number, options?: NumberTypeKnobOptions, groupId?: string): number;
+export declare function color(name: string, value: string, groupId?: string): string;
+export declare function object<T>(name: string, value: T, groupId?: string): T;
+export declare function select(name: string, options: SelectTypeOptionsProp, value: SelectTypeKnobValue, groupId?: string): import("react").ReactText;
+export declare function radios(name: string, options: RadiosTypeOptionsProp, value: string, groupId?: string): string;
+export declare function array(name: string, value: string[], separator?: string, groupId?: string): string[];
+export declare function date(name: string, value?: Date, groupId?: string): number;
+export declare function button(name: string, callback: ButtonTypeOnClickProp, groupId?: string): never;
+export declare function files(name: string, accept: string, value?: string[], groupId?: string): string[];
+export declare function optionsKnob<T>(name: string, valuesObj: OptionsTypeOptionsProp<T>, value: T, optionsObj: OptionsKnobOptions, groupId?: string): T;
+export declare const withKnobs: any;
+export * from './shared';
