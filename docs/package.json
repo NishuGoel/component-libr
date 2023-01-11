@@ -31,7 +31,7 @@
     "gatsby-remark-images": "^1.5.67",
     "gatsby-remark-smartypants": "^1.4.12",
     "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-transformer-remark": "^5.25.1",
     "global": "^4.4.0",
     "html-react-parser": "^0.8.1",
     "is-builtin-module": "^3.0.0",
